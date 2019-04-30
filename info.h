@@ -9,4 +9,4 @@
 #define file "1.txt" //digital data
 
 int readdata(char* filename);
-
+char buf[2000];

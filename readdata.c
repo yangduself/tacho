@@ -3,13 +3,14 @@
 //like the documentation mentions, the format of decoder output is 1001010101010001
 #include "info.h"
 
-
+//char buf[2000];
 int readdata(char* filename)
 {
 	
 	//ssize_t ret = -1;
-	char buf[2000] = {0};
+	
 	int fd = -1;
+	
 	memset(buf, 0, sizeof(buf));
 	fd = open(file, O_RDONLY);
 	if (fd<0)
@@ -20,8 +21,8 @@ int readdata(char* filename)
 	
 	read(fd, buf, 200);
 	
-	printf("content is: %s\n", buf);
-	printf("the first content is: %c\n", buf[0]);
+	//printf("content is: %s\n", buf);
+	//printf("the first content is: %c\n", buf[0]);
 	//return 0;
 }
 /*
