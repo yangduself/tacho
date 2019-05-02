@@ -6,7 +6,9 @@
 #include <fcntl.h>
 #include <stdlib.h>
 #include <string.h>
+#include <time.h>
+
 #define file "1.txt" //digital data
 
 int readdata(char* filename);
-char buf[2000];
+char buf[2500];

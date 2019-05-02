@@ -19,7 +19,7 @@ int readdata(char* filename)
 		exit(-1);
 	}
 	
-	read(fd, buf, 200);
+	read(fd, buf, 2000);
 	
 	//printf("content is: %s\n", buf);
 	//printf("the first content is: %c\n", buf[0]);
