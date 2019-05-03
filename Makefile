@@ -1,11 +1,12 @@
 
 CC = gcc
 
-	
 
-all : main.c readdata.c 
+
+all : main.c readdata.c
 	$(CC)  main.c  readdata.c -o tach
 	
 
 clean:
 	rm tach -rf
+	rm a.out -rf
