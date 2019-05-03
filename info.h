@@ -7,8 +7,9 @@
 #include <stdlib.h>
 #include <string.h>
 #include <time.h>
-
+#include <sys/time.h> 
 #define file "1.txt" //digital data
 
 int readdata(char* filename);
+long int getCurrentTime_in_ms(); 
 char buf[2500];
