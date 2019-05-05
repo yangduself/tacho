@@ -13,4 +13,4 @@
 #define DEBUG
 int readdata(char* filename);
 long int getCurrentTime_in_ms(); 
-char buf[2000];
+char buf[10000];

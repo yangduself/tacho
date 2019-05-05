@@ -28,22 +28,24 @@ int main (void)
 	//one option:multi-thread for accuract computation
 	//parent thread compute time period
 	//child thread compute how many '1' we got
-	// second option: just use one thread
+	// second option: just use one thread -> use this one
 	#ifdef DEBUG
 	printf("content is: %s\n", buf);
-	printf("the first content is: %c\n", buf[2]);
+	printf("the first content is: %c\n", buf[0]);
 	printf("t_base is: %f\n", t_base);
 	
 	#endif
 	
+	old_time = getCurrentTime_in_ms();
+	
 	while(1)
 	{
-			old_time = getCurrentTime_in_ms();
+			
 			#ifdef DEBUG
 			printf("before sleep.\n");
 			#endif
-			//sleep(1);
-			usleep(500000);
+			sleep(1);
+			//usleep(500000);
 			#ifdef DEBUG
 			printf("after sleep.\n");
 			#endif
@@ -63,9 +65,9 @@ int main (void)
 					}
 			
 				  
-				  if(NULL == *p)
+				 if(NULL == *p)
 				  {
-					  printf(" stopped rotation\n");
+					 printf(" stopped rotation\n");
 					  return -1;
 				  }
 				  p++;
@@ -83,6 +85,8 @@ int main (void)
 			printf("RPM is: %d\n", rpm);
 			
 			count = 0;
+			
+			old_time = getCurrentTime_in_ms();
 			
 	}		
 			return 0;
