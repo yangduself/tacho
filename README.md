@@ -30,7 +30,7 @@ for the time period, using sleep(1)-> 1s, usleep(500000)-> 0.5s.
 Otherwise, test.c and time.c only used for testing of time and read data.
 
 Algorithm: just using the rad/time_period to compute the period is near 1s. I am going to use a method like weighted estimated algorithm, eg:
-1 2 3 4 5 6 7 are the time point, if I want to compute #4's RPM, it can be estimated by the 1 2 3 points' RPM. However, I did not find the materials too much
-on the internet.
+1 2 3 4 5 6 7 are the time point, if I want to compute #4's RPM, it can be estimated by the 1 2 3 5 6 7points' RPM. However, I did not implement it in my code.
+
 
 
